@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+  --preto: #0B0B0C;
+  --grafite: #131315;
+  --hairline: #2A2A2E;
+  --marfim: #F2EDE3;
+  --areia: #A9A397;
+  --champanhe: #C9A65C;
+  --brilho: #E8D5A3;
+  --bronze: #8E6F2E;
+  --papel: #F3EEE4;
+  --tinta: #141414;
+  --bronze-escuro: #7A5C1E;
+  --linha-razao: rgb(201 166 92 / 7%);
+  --transparente: transparent;
+  --fonte-titulo: 'Cormorant Garamond', Georgia, serif;
+  --fonte-corpo: 'Manrope', Arial, sans-serif;
+  --texto-pequeno: .75rem;
+  --texto-corpo: 1rem;
+  --titulo-principal: clamp(2.35rem, 6.5vw, 3.75rem);
+  --espaco-1: .5rem;
+  --espaco-2: 1rem;
+  --espaco-3: 1.5rem;
+  --espaco-4: 2rem;
+  --espaco-5: 3rem;
+  --espaco-secao: clamp(2.5rem, 5vw, 3.5rem);
+  --margem: 1.25rem;
+  --largura: 77.5rem;
+  --duracao-curta: .4s;
+  --duracao-revelacao: .9s;
+  --curva-suave: cubic-bezier(.22, 1, .36, 1);
+}
+
+@media (min-width: 640px) {
+  :root { --margem: 2.5rem; }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --titulo-principal: clamp(3.25rem, 7.5vw, 7rem);
+    --espaco-secao: clamp(4.5rem, 9vw, 9rem);
+  }
+}

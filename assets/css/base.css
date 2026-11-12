@@ -1,0 +1,20 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
+body { margin: 0; background: var(--preto); color: var(--marfim); font-family: var(--fonte-corpo); font-size: var(--texto-corpo); line-height: 1.65; overflow-x: clip; }
+body::before { content: ''; position: fixed; inset: 0; z-index: 5; pointer-events: none; background: url('../svg/textura.svg') repeat; opacity: .025; }
+h1, h2, h3, p, figure, blockquote, dl, dd { margin: 0; }
+h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 500; line-height: 1.1; }
+h2 { font-size: clamp(2.5rem, 4.5vw, 4.5rem); }
+h3 { font-size: clamp(1.75rem, 2.5vw, 2.5rem); }
+h2 em { color: var(--champanhe); font-weight: 500; }
+svg { display: block; max-width: 100%; height: auto; }
+input, select, button { font: inherit; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--champanhe); outline-offset: 4px; }
+section[id] { scroll-margin-top: 2rem; }
+p { max-width: 65ch; }
+a { color: inherit; text-underline-offset: .3em; }
+a:hover { color: var(--brilho); }
+a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--champanhe); outline-offset: 6px; }
+img { display: block; max-width: 100%; height: auto; }
+address { font-style: normal; }
+::selection { color: var(--preto); background: var(--champanhe); }

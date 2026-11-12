@@ -1,0 +1,38 @@
+CRÉDITOS E ATRIBUIÇÕES — GAMA CONTABILIDADE
+
+1. TIPOGRAFIA
+- Cormorant Garamond (títulos e numerais)
+  Designer: Christian Schwartz
+  Licença: SIL Open Font License, Version 1.1
+  Distribuição: Google Fonts
+
+- Manrope (corpo, interface e rótulos)
+  Designer: Mikhail Sharov
+  Licença: SIL Open Font License, Version 1.1
+  Distribuição: Google Fonts
+
+2. IDENTIDADE VISUAL, ÍCONES E VETORES
+- Logotipo "GAMA Contabilidade Consultiva": criação original vetorial (SVG)
+- Monograma Γ (Gama maiúsculo): traço fino original vetorial (SVG)
+- Favicon e textura de livro-razão: criação original vetorial (SVG)
+- Retratos dos sócios (Helena Vasconcelos, Ricardo Amaral, Marina Tavares):
+  Placeholders duotone tipográficos com monogramas autorais em SVG, conforme
+  diretriz da Seção 3.5 do CLAUDE.md
+- Ícones de interface (menu hamburguer, setas de carrossel, expandir FAQ, WhatsApp):
+  Traço linear fino 1.25px original vetorial (SVG)
+
+3. BIBLIOTECAS (CDNs com versão fixa)
+- Lenis Smooth Scroll (v1.1.14)
+  Autor: Studio Freight / Darkroom Engineering
+  Licença: MIT License
+- GreenSock Animation Platform — GSAP (v3.12.5)
+  Autor: GreenSock Inc.
+  Licença: Standard License
+- ScrollTrigger Plugin (v3.12.5)
+  Autor: GreenSock Inc.
+  Licença: Standard License
+
+4. DADOS E TEXTOS
+Todos os textos, nomes de sócios, clientes, depoimentos, indicadores contábeis,
+registros no CRC e CNPJ são fictícios, desenvolvidos exclusivamente para esta
+página de apresentação e demonstração de contabilidade consultiva.

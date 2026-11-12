@@ -1,0 +1,9 @@
+.container { width: min(var(--largura), calc(100% - var(--margem) * 2)); margin-inline: auto; }
+.grade { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--espaco-3); }
+.grade > * { min-width: 0; grid-column: 1 / -1; }
+.secao { padding-block: var(--espaco-secao); }
+.editorial { display: grid; gap: 3rem; }
+.editorial > *, .contato__grade > * { min-width: 0; }
+@media (min-width: 1024px) {
+  .editorial { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 8.333%; }
+}

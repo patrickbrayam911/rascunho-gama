@@ -1,0 +1,63 @@
+/* ─── Estados iniciais de animação ─── */
+
+/* Elemento que vai revelar: invisível, deslocado 28px para baixo */
+[data-rev] {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+/* Máscara para revelação linha a linha de títulos */
+.linha-mascara {
+  overflow: hidden;
+  display: block;
+}
+.linha-mascara span {
+  display: block;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Linha dourada sob títulos de seção: começa sem largura */
+[data-linha]::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  margin-top: 1.25rem;
+  background: var(--champanhe);
+  transition: width var(--duracao-revelacao) var(--curva-suave);
+}
+[data-linha].ativo::after {
+  width: 3rem;
+}
+
+/* Contadores: ocultos antes de animar */
+[data-contador] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─── Reduced motion: tudo aparece imediatamente ─── */
+@media (prefers-reduced-motion: reduce) {
+  [data-rev],
+  .linha-mascara span {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  [data-linha]::after {
+    width: 3rem;
+    transition: none;
+  }
+
+  .cabecalho {
+    transition: none !important;
+  }
+}
+
+/* ─── Mobile: reduzir deslocamento e durações em ~20% ─── */
+@media (max-width: 639px) {
+  [data-rev] {
+    transform: translateY(20px);
+  }
+}
